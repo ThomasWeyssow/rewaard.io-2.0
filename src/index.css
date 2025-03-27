@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poiretone/v16/UqyVK80NJXN4zfRgbdfbo5pcV_cx.woff2) format('woff2');
+  }
+}
+
+.font-poiret {
+  font-family: 'Poiret One', cursive;
+}
+
+/* Custom class for all H2 elements */
+@layer components {
+  .heading-2 {
+    @apply font-raleway font-normal text-3xl text-[#100127] mb-3 lg:mb-4;
+  }
+}
+
+/* Custom class for all H3 elements */
+@layer components {
+  .heading-3 {
+    @apply font-raleway font-normal text-base text-[#35303C] mb-4 lg:mb-8;
+  }
+}
+
+/* Custom class for all subtitles elements */
+@layer components {
+  .subtitle {
+    @apply font-raleway font-medium text-xl text-[#100127];
+  }
+}
+
+/* Custom class for all subtitles-2 elements */
+@layer components {
+  .subtitle-2 {
+    @apply font-raleway font-bold text-sm text-[#35303C];
+  }
+}
+
+/* Custom class for all body-2 elements */
+@layer components {
+  .body-2 {
+    @apply font-inter font-normal text-sm text-[#35303C];
+  }
+}
+
+/* Custom class for all container-large elements */
+@layer components {
+  .container-large {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+/* Custom class for all container-normal elements */
+@layer components {
+  .container-normal {
+    @apply max-w-4xl mx-auto;
+  }
+}
+
+/* Custom class for all white-box elements */
+@layer components {
+  .white-box {
+    @apply bg-[#FEFEFF] text-center shadow-md rounded-2xl px-4 py-6 lg:p-12 mt-6 lg:mt-10;
+  }
+}
+
+/* Custom class for all purple-box elements */
+@layer components {
+  .purple-box {
+    @apply bg-[#EDE6F8] text-center rounded-2xl px-4 py-6 lg:p-12 mt-6 lg:mt-10;
+  }
+}  
+
+/* Custom class for all grids-3 columns elements */
+@layer components {
+  .grid-3-col {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+}  
+
+/* Custom class for all icons-white-bg elements */
+@layer components {
+  .icons-white {
+    @apply bg-[#FEFEFF] p-4 rounded-lg text-[#4F03C1];
+  }
+}
+
+/* Custom class for all pills-rounded elements */
+@layer components {
+  .pill-rounded {
+    @apply inline-flex items-center px-4 py-2 rounded-full shadow-md gap-4;
+  }
+}
+
+/* Custom class for all pills-regular elements */
+@layer components {
+  .pill-regular {
+    @apply flex items-center px-4 py-2 rounded-lg gap-2;
+  }
+} 
+  
+/* Custom class for all pills-yellow elements */
+@layer components {
+  .pill-yellow {
+    @apply bg-[#FFEACC] text-[#CC7A00] body-2;
+  }
+}
+
+  /* Custom class for all pills-green elements */
+@layer components {
+  .pill-green {
+    @apply bg-[#CDEAE7] text-[#03786C] body-2;
+  }
+}
+
+  /* Custom class for all pills-gray elements */
+@layer components {
+  .pill-gray {
+    @apply bg-gray-200 text-gray-600 body-2;
+  }
+}
+
+/* Custom class for all info-pills-right elements */
+@layer components {
+  .info-pill-right {
+    @apply absolute top-4 right-4 rounded-lg px-3 py-1 lg:px-4 lg:py-2;
+  }
+}
+
+/* Custom class for all pills-white elements */
+@layer components {
+  .pill-white {
+    @apply inline-flex items-center px-4 py-3 rounded-xl bg-[#FEFEFF] text-[#100127] text-sm font-medium gap-2 mb-8;
+  }
+}
+
+/* Custom class for all buttons elements */
+@layer components {
+  .button-style {
+    @apply flex items-center justify-center gap-2 font-raleway font-medium transition-colors rounded-lg px-4 py-3;
+  }
+}
+
+/* Custom class for all buttons-primary elements */
+@layer components {
+  .button-primary {
+    @apply bg-[#4F03C1] hover:bg-[#3B0290] text-[#FEFEFF] font-raleway font-medium transition-colors rounded-lg px-4 py-3;
+  }
+}
+
+/* Custom class for all buttons-primary-disabled elements */
+@layer components {
+  .button-primary-disabled {
+    @apply bg-[#7E58C2] text-[#FEFEFF] font-raleway font-medium transition-colors rounded-lg px-4 py-3 cursor-not-allowed;
+  }
+}
+
+/* Custom class for all buttons-cancel elements */
+@layer components {
+  .button-cancel {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 font-raleway font-medium transition-colors rounded-lg px-4 py-3 disabled:opacity-50;
+  }
+}
+
+/* Custom class for all buttons-disabled elements */
+@layer components {
+  .button-disabled {
+    @apply bg-gray-300 text-gray-500 cursor-not-allowed;
+  }
+}
+
+/* Custom class for all menu-entries-activated elements */
+@layer components {
+  .menu-active {
+    @apply font-raleway font-medium bg-[#4F03C1] text-[#FEFEFF] rounded-lg;
+  }
+}
+
+/* Custom class for all menu-entries-not-activated elements */
+@layer components {
+  .menu-inactive {
+    @apply font-raleway font-medium text-gray-700 hover:bg-gray-50 rounded-lg;
+  }
+}
+
+/* Custom class for all modal-opacity elements */
+@layer components {
+  .modal-opacity {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50;
+  }
+}
+
+/* Custom class for all modal-style elements */
+@layer components {
+  .modal-style {
+    @apply bg-white rounded-2xl p-10 max-w-2xl w-full max-h-[90vh] overflow-y-auto;
+  }
+}
